@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANUT 360</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <style>
+    .slider-img {
+      height: 400px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .archive, .ads {
+      background-color: #f8f9fa;
+      padding: 1rem;
+    }
+    footer {
+      background-color: #343a40;
+      color: white;
+      padding: 2rem 1rem;
+    }
+    .footer-links a {
+      color: #bbb;
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">ANUT 360</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Temples</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Schools</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Colleges</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Slider -->
+  <div id="eventSlider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">
+          <img src="https://source.unsplash.com/1200x400/?temple" class="d-block w-100 slider-img" alt="Event 1">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="#">
+          <img src="https://source.unsplash.com/1200x400/?school" class="d-block w-100 slider-img" alt="Event 2">
+        </a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#eventSlider" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#eventSlider" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-md-8">
+        <h3>Latest News / Event</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.</p>
+      </div>
+      <div class="col-md-4 archive">
+        <h5>Archive</h5>
+        <ul class="list-unstyled">
+          <li><a href="#">June 2025</a></li>
+          <li><a href="#">May 2025</a></li>
+          <li><a href="#">April 2025</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Three Columns + Ads -->
+    <div class="row mt-4">
+      <div class="col-md-3">
+        <h5>Temple Event</h5>
+        <img src="https://source.unsplash.com/300x200/?temple,india" class="img-fluid">
+        <p>Summary of the temple function held recently.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>School Activity</h5>
+        <img src="https://source.unsplash.com/300x200/?students,classroom" class="img-fluid">
+        <p>Highlights from annual day celebration.</p>
+      </div>
+      <div class="col-md-3">
+        <h5>College News</h5>
+        <img src="https://source.unsplash.com/300x200/?college,education" class="img-fluid">
+        <p>Farewell and graduation updates from campus.</p>
+      </div>
+      <div class="col-md-3 ads">
+        <h5>Sponsored</h5>
+        <img src="https://via.placeholder.com/300x250?text=Ad+Space+1" class="img-fluid mb-2">
+        <img src="https://via.placeholder.com/300x250?text=Ad+Space+2" class="img-fluid">
+      </div>
+    </div>
+
+    <!-- Additional Ads -->
+    <div class="row mt-4">
+      <div class="col-md-6">
+        <img src="https://via.placeholder.com/600x100?text=Banner+Ad+1" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <img src="https://via.placeholder.com/600x100?text=Banner+Ad+2" class="img-fluid">
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Contact Us</h5>
+          <p>ANUT 360<br>Aruppukottai, Tamil Nadu<br>Email: info@anut360.com</p>
+        </div>
+        <div class="col-md-4 footer-links">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Temples</a></li>
+            <li><a href="#">Schools</a></li>
+            <li><a href="#">Colleges</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Subscribe to Newsletter</h5>
+          <form>
+            <input type="email" class="form-control mb-2" placeholder="Your email">
+            <button class="btn btn-primary">Subscribe</button>
+          </form>
+          <div class="mt-3">
+            <a href="#" class="text-white me-2">Facebook</a>
+            <a href="#" class="text-white me-2">YouTube</a>
+            <a href="#" class="text-white">Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
